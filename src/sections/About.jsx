@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import { Globe } from '../components/Globe'
 import Emailbutton from '@/components/Emailbutton'
 import { Frame } from 'lucide-react'
+import { Frameworks } from '@/components/Frameworks'
 
 
 
@@ -74,9 +75,15 @@ md:auto-rows-[18rem] mt-12'>
 
                 {/* grid 5 */}
                 <div className='grid-default-color grid-5'>
+                    <div className='z-10 w-[50%]'>
+                        <p className='headtext'>Tech Stack</p>
+                        <p className='subtext'>I Specialize in a veriety of laugnauges , frameworks , and tools
+                            that allow me to create stunning and efficient web applications. I am always eager to learn new technologies and stay updated with the latest trends in web development.
+                        </p>
+                    </div>
                     <div className='absolute inset-y-0 md:inset-y-9 w-full
                     h-full start-[50%] md:scale-125'>
-                       
+                       <Frameworks/>
                     </div>
  </div>
 
