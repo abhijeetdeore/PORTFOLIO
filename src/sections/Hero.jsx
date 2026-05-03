@@ -27,18 +27,12 @@ const Hero = () => {
             </figure>
 
             {/* Fade transition into About section */}
-            <div
-                style={{
-                    position: 'absolute',
-                    bottom: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '220px',
-                    background: 'linear-gradient(to bottom, transparent, #030412)',
-                    pointerEvents: 'none',
-                    zIndex: 10,
-                }}
-            />
+            <div className={[
+                "absolute bottom-0 left-0",
+                "w-full h-[120px] sm:h-[160px] md:h-[220px]",
+                "bg-gradient-to-b from-transparent to-[#030412]",
+                "pointer-events-none z-10"
+            ].join(" ")} />
 
         </section>
     );
