@@ -14,8 +14,8 @@ if (typeof window !== "undefined") {
 
 export function Skull({ scale, position, ...props }) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF(
-    "/models/tenhun_falling_spaceman_fanart.glb"
+        const { nodes, materials, animations } = useGLTF(
+          `${import.meta.env.BASE_URL}models/tenhun_falling_spaceman_fanart.glb`
   );
   const { actions } = useAnimations(animations, group);
 
@@ -92,4 +92,4 @@ export function Skull({ scale, position, ...props }) {
   );
 }
 
-useGLTF.preload("/models/tenhun_falling_spaceman_fanart.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}models/tenhun_falling_spaceman_fanart.glb`);
