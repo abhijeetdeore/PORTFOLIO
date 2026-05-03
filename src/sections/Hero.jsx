@@ -26,13 +26,13 @@ const Hero = () => {
                 </Canvas>
             </figure>
 
-            {/* Fade transition into About section */}
+            
             <div className={[
-                "absolute bottom-0 left-0",
-                "w-full h-[120px] sm:h-[160px] md:h-[220px]",
-                "bg-gradient-to-b from-transparent to-[#030412]",
-                "pointer-events-none z-10"
-            ].join(" ")} />
+    "absolute bottom-0 left-0",
+    "w-full h-[220px] sm:h-[180px] md:h-[220px]",  
+    "bg-gradient-to-b from-transparent to-[#030412]",
+    "pointer-events-none z-10"
+].join(" ")} />
 
         </section>
     );
