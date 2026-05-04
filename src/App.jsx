@@ -1,24 +1,23 @@
-import React from 'react'
+import { Suspense, lazy } from 'react'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
-import About from './sections/About'
-import Projects from './sections/Projects'
-import Contacts from './sections/Contacts'
-import Footer from './components/Footer'
 
+const About = lazy(() => import('./sections/About'))
+const Projects = lazy(() => import('./sections/Projects'))
+const Contacts = lazy(() => import('./sections/Contacts'))
+const Footer = lazy(() => import('./components/Footer'))
 
 const App = () => {
   return (
     <div className='container mx-auto max-w-7xl'>
       <Navbar />
       <Hero />
-      <About />
-      <Projects />
-      <Contacts/>
-      <Footer/>
-      
-      
-
+      <Suspense fallback={null}>
+        <About />
+        <Projects />
+        <Contacts />
+        <Footer />
+      </Suspense>
     </div>
   )
 }

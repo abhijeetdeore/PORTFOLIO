@@ -1,6 +1,6 @@
 import React from 'react'
-import skyy from '../imgcomps/skyy.png'
-import boat from '../imgcomps/boat.png'
+import skyy from '../imgcomps/skyy.webp'
+import boat from '../imgcomps/boat.webp'
 
 const ParallaxBackground = () => {
   return (
