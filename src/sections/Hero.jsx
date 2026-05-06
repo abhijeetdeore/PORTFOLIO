@@ -14,8 +14,9 @@ const Hero = () => {
         <section
             id="home"
             className="flex items-start justify-center
-        md:items-start md:justify-start min-h-screen overflow-hidden
-        c-space">
+            md:items-start md:justify-start min-h-screen
+            c-space"
+            style={isMobile ? { height: '100svh', overflow: 'hidden' } : {}}>
             <HeroText />
             <ParallaxBackground />
             <figure
@@ -26,14 +27,12 @@ const Hero = () => {
                 </Canvas>
             </figure>
 
-            
             <div className={[
-    "absolute bottom-0 left-0",
-    "w-full h-[80px] sm:h-[140px] md:h-[220px]",
-    "bg-gradient-to-b from-transparent to-[#030412]",
-    "pointer-events-none z-10"
-].join(" ")} />
-
+                "absolute bottom-0 left-0",
+                "w-full h-[80px] sm:h-[140px] md:h-[220px]",
+                "bg-gradient-to-b from-transparent to-[#030412]",
+                "pointer-events-none z-10"
+            ].join(" ")} />
         </section>
     );
 };
